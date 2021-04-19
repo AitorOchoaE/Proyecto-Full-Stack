@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssredbiblios.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerupper">
+            <h1>Bibliotecas municipales de Bilbao</h1>
+            <a href="http://localhost:3000/login.html"><img src=".\style\logoutdoor.png" alt="Logout door"></a>
+        </div>
+        <div id="menu">
+            <a class="seccion" href="librosGet.html">LIBROS</a>
+            <a class="seccion" href="bibliotecasGet.html">BIBLIOTECAS</a>
+            <a class="seccion" href="catbibliosGet.html">CATÁLOGO LIBROS EN BIBLIOTECAS</a>
+            <a class="seccion" href="usuariosGet.html">USUARIOS</a>
+            <a class="seccion" href="prestamosGet.html">PRÉSTAMOS</a>
+        </div>
+    </header>
+
+    <main>
+        <div id="mainleft">
+            <ul>
+                <li class="opciones"><a href="usuariosGet.html">Listado de usuarios</a></li>
+                <li class="opciones"><a href="usuariosPost.html">Añadir usuario</a></li>
+                <li class="opciones"><a href="usuariosPut.html">Modificar datos de usuario</a></li>
+                <li class="opciones"><a href="usuariosDelete.html">Borrar usuario</a></li>
+            </ul>
+        </div>
+        <div id="mainright">
+            <h1>Modificar datos del usuario</h1>
+
+            <div id="usuarios"></div>
+            <div class="clinputs"> <!-- MEJORA: SI HACEMOS UN FORM (SIN LA ETIQUETA PARA QUE FETCH POST PUEDA FUNCIONAR), PODEMOS PONERLE A LOS INPUTS LA ETIQUETA 'REQUIRED', Y ASI ES OBLIGATORIO RELLENARLOS PARA PODER PULSAR EL BOTON -->
+                <p><label for="dni">Inserta el DNI del cual quieres cambiar los datos:</label>
+                    <input id="dni" type="text" name="dni">
+                </p>
+                <p><label for="name">Modifica el nombre:</label>
+                    <input id="name" type="text" name="nombre">
+                </p>
+                <p><label for="surname1">Modifica el primer apellido:</label>
+                    <input id="surname1" type="text" name="apellido1">
+                </p>
+                <p><label for="surname2">Modifica el segundo apellido:</label>
+                    <input id="surname2" type="text" name="apellido2">
+                </p>
+                <p><button id="botonModificarUsuario">Modificar usuario</button></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="plaintext"><b>© All Rights Reserved.</b></p>
+        <span class="plaintext"> Created by </span>
+        <span class="plaintext" style="color: rgb(119, 23, 6)"><b>AOE 2021. </b></span><span
+            class="plaintext"><b>Bootcamp
+                Module 2: </b></span>
+        <span class="plaintext" style="color:rgb(119, 23, 6)"><b>Node.js,
+                Express & MongoDB.</b></span>
+    </footer>
+
+    <script src="js/usuariosPutScript.js"></script>
+
+</body>
+
+</html>

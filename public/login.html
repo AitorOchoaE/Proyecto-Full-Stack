@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssredbiblios.css">
+</head>
+
+<body id="bodyLogin">
+    <div id="idUpper">
+        <button onclick="document.getElementById('idInnerSignIn').style.display='block'; document.getElementById('idInnerLogIn').style.display='none'" >Registro</button>
+        <!-- <button id="id_si">Registro</button> -->
+        <button onclick="document.getElementById('idInnerLogIn').style.display='block'; document.getElementById('idInnerSignIn').style.display='none'" >Iniciar sesión</button>
+        <!-- <button id="id_li">Iniciar sesión</button> -->
+    </div>
+    <!-- <div id="titlecontainer"> -->
+        <!-- <img src="./style/manuscript3.png" alt="Manuscript" style="width:30%; height: 1%;"> -->
+        <h1>Hoy es un buen día para leer...</h1>
+    <!-- </div> -->
+    <div id="idInnerSignIn" class="idInner"> <!-- class="modal" -->
+        <div class="imgcontainer">
+            <h2>Registro</h2>
+            <span onclick="document.getElementById('idInnerSignIn').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <!-- <h1>Bibliotecas Municipales de Bilbao</h1> -->
+        <div class="logininputs">
+            <label for="username1"><b>Nombre de usuario/a</b></label>
+            <input id="username1" type="text" name="usuario" placeholder="Inserta nombre de usuario/a" required>
+            <label for="password1"><b>Contraseña</b></label>
+            <input id="password1" type="password" name="password" placeholder="Inserta la contraseña" required>
+            <button id="signin">Registrarse</button>
+        </div>
+    </div>
+
+    <div id="idInnerLogIn" class="idInner"> <!-- class="modal" -->
+        <div class="imgcontainer">
+            <h2>Iniciar sesión</h2>
+            <span onclick="document.getElementById('idInnerLogIn').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <!-- <h1>Bibliotecas Municipales de Bilbao</h1> -->
+        <div class="logininputs">
+            <label for="username2"><b>Nombre de usuario/a</b></label>
+            <input id="username2" type="text" name="usuario" placeholder="Inserta nombre de usuario/a" required>
+            <label for="password2"><b>Contraseña</b></label>
+            <input id="password2" type="password" name="password" placeholder="Inserta la contraseña" required>
+            <button id="login">Iniciar sesión</button>
+        </div>
+    </div>
+
+    <script src="js/loginPostScript.js"></script>
+
+</body>
+
+</html>

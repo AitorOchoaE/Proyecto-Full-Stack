@@ -1,0 +1,24 @@
+.clbody{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clopciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccion{
+    padding: .4rem;
+    color: white;
+    background-color: blue;
+    margin: .7rem;
+}
+.sectionoption{
+    padding: .4rem;
+    color: white;
+    background-color: rgb(86, 22, 99);
+}

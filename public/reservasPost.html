@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="csshotel.css"> -->
+</head>
+<body>
+    <h1>Check In</h1>
+
+    <div id="reservas"></div>
+    <!-- Hay 2 formas-->
+    <!-- Una forma es POST con form (pondriamos action, y en vez de un boton, pondriamos un input tipo submit) -->
+    <!-- La otra forma es POST con fetch, que es lo que nosotros haremos aqui (despues en script.js hay que hacer fetchData, etc) -->
+    <p>Vamos a comprobar si la persona ya está registrada y si la habitación que pide está libre, si no, no podrá reservar.</p>
+    <p><label for="dni">Inserta el DNI:</label>
+    <input id="dni" type="text" name="dni"></p>
+    <p><label for="num_habit">Inserta el num de habitación:</label>
+    <input id="room" type="text" name="num_habit"></p>
+    <p><label for="fechaCheckIn">Inserta la fecha de Check In:</label>
+    <input id="dateCheckIn" type="date" name="fechaCheckIn"></p>
+    <p><label for="fechaCheckOut">Inserta la fecha de Check Out:</label>
+    <input id="dateCheckOut" type="date" name="fechaCheckOut"></p>
+    <button id="botonAnadir">Realizar reserva del cliente</button>
+    <p><a href="clientesGet.html">Ir a Listado cliente</a></p>
+    <p><a href="clientesPut.html">Ir a Modificar datos de cliente</a></p>
+    <!-- <p><a href="clientesDelete.html">Ir a Borrar cliente</a></p> -->
+
+    <p><a class="seccion" href="clientesAll.html">SECCIÓN CLIENTES</a></p>
+
+    <script src="js/reservasPostScript.js"></script>
+
+</body>
+</html>

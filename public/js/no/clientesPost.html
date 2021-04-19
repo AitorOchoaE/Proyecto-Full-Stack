@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="csshotel.css"> -->
+</head>
+<body>
+    
+    <h1>Añadir cliente nuevo</h1>
+
+    <div id="clientes"></div>
+    <!-- Hay 2 formas-->
+    <!-- Una forma es POST con form (pondriamos action, y en vez de un boton, pondriamos un input tipo submit) -->
+    <!-- La otra forma es POST con fetch, que es lo que nosotros haremos aqui (despues en script.js hay que hacer fetchData, etc) -->
+    
+    <p><label for="nombre">Inserta el nombre:</label>
+    <input id="name" type="text" name="nombre"></p>
+    <p><label for="apellido">Inserta el apellido:</label>
+    <input id="surname" type="text" name="apellido"></p>
+    <p><label for="dni">Inserta el DNI:</label>
+    <input id="dni" type="text" name="dni"></p>
+    <button id="botonAnadir">Añadir cliente</button>
+    <p><a href="clientesGet.html">Ir a Listado cliente</a></p>
+    <p><a href="clientesPut.html">Ir a Modificar datos de cliente</a></p>
+    <!-- <p><a href="clientesDelete.html">Ir a Borrar cliente</a></p> -->
+
+    <p><a class="seccion" href="reservasAll.html">SECCIÓN RESERVAS</a></p>
+    
+
+    <script src="js/clientesPostScript.js"></script>
+
+</body>
+</html>

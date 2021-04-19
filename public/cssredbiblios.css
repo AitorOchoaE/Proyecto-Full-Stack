@@ -1,0 +1,277 @@
+*{
+    font-family: "Cambria", "Helvetica", sans-serif;
+}
+body{
+    min-height: 100vh;
+    margin: 0;
+    /* background-color: bisque; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+/* HEADER */
+header{
+    background-image: url("./style/library3.jpg");
+    /* opacity: 0.8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: stretch; */
+}
+#headerupper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#headerupper img{
+    height: 2rem;
+    padding: .5rem;
+    margin: 1rem 1.5rem 1rem 1rem;
+    background-color: rgb(201, 77, 55);
+    border: solid white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#headerupper img:hover{
+    background-color: rgb(255, 255, 255);
+}
+#headerupper img:active{
+    background-color: rgb(255, 187, 0);
+}
+header h1{
+    color: white;
+    text-align: left;
+    padding-left: 3rem;
+}
+#menu{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+.seccion{
+    font-size: .9rem;
+    background-color: rgb(150, 30, 9);
+    color: white;
+    padding: .6rem .7rem;
+    margin: 0 .8rem;
+    border: solid white;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none; /*quitar subrayado*/
+}
+.seccion:hover{
+    background-color: rgb(216, 6, 6);
+}
+.seccion:active{
+    background-color: rgb(255, 187, 0);
+}
+
+/* MAIN */
+main{
+    display: flex;
+    min-height: 65.9vh;
+}
+#mainleft{
+    background-color: rgb(224, 56, 56);
+    width: 20%;
+}
+#mainleft ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 1.2rem;
+}
+.opciones{
+    padding: .5rem;
+}
+.opciones a{
+    color: white;
+    text-decoration: none; /*quitar subrayado*/
+}
+.opciones:hover{
+    background-color: rgb(216, 6, 6);
+}
+.opciones:active{
+    background-color: rgb(255, 187, 0);
+}
+#mainright{
+    /* background-color: rgb(207, 159, 159); */
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("./style/oldpaper3.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 2rem 1rem 3rem 1rem;
+    width: 80%;
+}
+#mainright h1{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+#mainright h2{
+    font-size: 1.2rem;
+    color: rgb(119, 23, 6);
+    padding-left: 5rem; 
+}
+#mainright h3{
+    font-size: 1.2rem;
+    color: rgb(119, 23, 6);
+    /* padding-left: 5rem; */
+    margin: 0 1rem;
+}
+.clm{
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+.clinputs{
+    padding-top: 1rem;
+    padding-left: 6rem;
+}
+.clinputs button{
+    font-size: 1rem;
+}
+.clinputs select{
+    font-size: .9rem;
+}
+#usuarios{
+    text-align: center;
+}
+table{
+    border: 1px solid #dddddd; 
+    /* text-align: left; */
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    background-color: rgb(119, 23, 6);
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: rgb(216, 164, 143);;
+  }
+td{
+    padding: auto .5rem;
+    /* padding-right: .5rem; */
+}
+
+/* FOOTER */
+footer{
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: rgb(226, 127, 110);
+}
+footer .plaintext{
+    font-size: .9rem;
+    color: white;
+    margin: 0;
+}
+
+#bodyLogin{
+    background-image: url("./style/library5.jpg");
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    background-size: 102%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#idUpper{
+    display: flex;
+    margin-top: 3rem;
+    /* justify-content: right; */
+    /* height: 10rem; */
+}
+#idUpper button{
+    font-size: 1rem;
+    background-color: rgb(150, 30, 9);
+    color: white;
+    font-style: italic;
+    padding: .6rem .7rem;
+    margin: 0 .8rem;
+    border: solid white;
+    border-radius: 15px;
+    text-align: center;
+}
+#idUpper button:hover{
+    background-color: rgb(216, 6, 6);
+}
+#idUpper button:active{
+    background-color: rgb(255, 187, 0);
+}
+/* #titlecontainer{ */
+    /* position: relative; */
+    /* text-align: center;
+    color: white;
+} */
+#bodyLogin h1{
+    font-size: 1.6rem;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2rem;
+    /* margin-bottom: 1.5rem; */
+}
+.idInner{ /* The Modal (background) */
+    background-color: rgba(150, 30, 9, 0.404);
+    color: white;
+    margin-top: 11rem;
+    padding: 1rem 1.5rem;
+    /* margin: 0 25rem; */
+    width: 20%;
+    border: solid .1rem white;
+    border-radius: 20px;
+    -webkit-animation: animatezoom 0.6s; /* Add Zoom Animation */
+    animation: animatezoom 0.6s;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    overflow: auto; /* Enable scroll if needed */
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.idInner .imgcontainer{
+    /* margin-top: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: .5rem;
+    /* text-align: right; */
+}
+.close{ /* The Close Button (x) */
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.idInner h2{
+    font-size: 1.1rem;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+.logininputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.logininputs input, .logininputs button{
+    height: 2rem;
+    margin: .5rem 0;
+    font-size: 1rem;
+}
+.logininputs button{
+    background-color:rgb(248, 51, 16);
+    color: white;
+}

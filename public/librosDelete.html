@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssredbiblios.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerupper">
+            <h1>Bibliotecas municipales de Bilbao</h1>
+            <a href="http://localhost:3000/login.html"><img src=".\style\logoutdoor.png" alt="Logout door"></a>
+        </div>
+        <div id="menu">
+            <a class="seccion" href="librosGet.html">LIBROS</a>
+            <a class="seccion" href="bibliotecasGet.html">BIBLIOTECAS</a>
+            <a class="seccion" href="catbibliosGet.html">CATÁLOGO LIBROS EN BIBLIOTECAS</a>
+            <a class="seccion" href="usuariosGet.html">USUARIOS</a>
+            <a class="seccion" href="prestamosGet.html">PRÉSTAMOS</a>
+        </div>
+    </header>
+
+    <main>
+        <div id="mainleft">
+            <ul>
+                <li class="opciones"><a href="librosGet.html">Catálogo de libros</a></li>
+                <li class="opciones"><a href="librosPost.html">Añadir libro</a></li>
+                <li class="opciones"><a href="librosPut.html">Modificar datos de libro</a></li>
+                <li class="opciones"><a href="librosDelete.html">Borrar libro</a></li>
+            </ul>
+        </div>
+        <div id="mainright">
+            <h1>Eliminar libro de la base de datos general</h1>
+
+            <div id="libros"></div>
+            <div class="clinputs">
+                <p><label for="isbn">Inserta el ISBN del libro a borrar:</label>
+                    <input id="isbn" type="text" name="isbn">
+                </p>
+                <p><button id="botonBorrarLibro">Borrar libro</button></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="plaintext"><b>© All Rights Reserved.</b></p>
+        <span class="plaintext"> Created by </span>
+        <span class="plaintext" style="color: rgb(119, 23, 6)"><b>AOE 2021. </b></span><span
+            class="plaintext"><b>Bootcamp
+                Module 2: </b></span>
+        <span class="plaintext" style="color:rgb(119, 23, 6)"><b>Node.js,
+                Express & MongoDB.</b></span>
+    </footer>
+
+    <script src="js/librosDeleteScript.js"></script>
+
+</body>
+
+</html>
